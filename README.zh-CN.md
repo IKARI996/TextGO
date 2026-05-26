@@ -95,28 +95,28 @@ _可以按照以下步骤解决：_
 
 ## 🛠️ 开发指南
 
-1. 参考 [Tauri 官方文档](https://v2.tauri.app/start/prerequisites/) 安装 Rust 和 Node.js（包管理器使用 [pnpm](https://pnpm.io/)）
+1. 参考 [Tauri 官方文档](https://v2.tauri.app/start/prerequisites/) 安装 Rust 和 Node.js
 2. 克隆项目并安装依赖：
    ```bash
    git clone https://github.com/C5H12O5/TextGO.git
    cd TextGO
-   pnpm install
+   npm install
    ```
 3. 运行开发环境：
 
    ```bash
-   pnpm tauri dev
+   npm run tauri dev
 
    # 类 Unix 系统下启用调试日志
-   RUST_LOG=debug pnpm tauri dev
+   RUST_LOG=debug npm run tauri dev
 
    # Windows PowerShell 下启用调试日志
-   $env:RUST_LOG="debug"; pnpm tauri dev
+   $env:RUST_LOG="debug"; npm run tauri dev
    ```
 
 4. 构建安装包：
    ```bash
-   pnpm tauri build
+   npm run tauri build
    ```
 
 ## 🎉 特别鸣谢

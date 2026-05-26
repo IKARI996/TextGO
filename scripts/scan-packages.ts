@@ -31,7 +31,7 @@ interface Package {
 function runLicenseChecker() {
   console.log('🔍 Running license-checker for frontend dependencies...');
   try {
-    const command = `pnpm dlx license-checker --direct --json --customPath ./scripts/.format.json --out ${FRONTEND_JSON}`;
+    const command = `npx --yes license-checker --direct --json --customPath ./scripts/.format.json --out ${FRONTEND_JSON}`;
     execSync(command, {
       cwd: PROJECT_ROOT,
       stdio: 'inherit'
