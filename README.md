@@ -95,28 +95,28 @@ _Follow these steps to resolve:_
 
 ## 🛠️ Development
 
-1. Refer to [Tauri official documentation](https://v2.tauri.app/start/prerequisites/) to install Rust and Node.js (use [pnpm](https://pnpm.io/) as the package manager)
+1. Refer to [Tauri official documentation](https://v2.tauri.app/start/prerequisites/) to install Rust and Node.js
 2. Clone and setup:
    ```bash
    git clone https://github.com/C5H12O5/TextGO.git
    cd TextGO
-   pnpm install
+   npm install
    ```
 3. Run development mode:
 
    ```bash
-   pnpm tauri dev
+   npm run tauri dev
 
    # enable debug logs on Unix-like systems
-   RUST_LOG=debug pnpm tauri dev
+   RUST_LOG=debug npm run tauri dev
 
    # enable debug logs on Windows PowerShell
-   $env:RUST_LOG="debug"; pnpm tauri dev
+   $env:RUST_LOG="debug"; npm run tauri dev
    ```
 
 4. Build installer:
    ```bash
-   pnpm tauri build
+   npm run tauri build
    ```
 
 ## 🎉 Acknowledgments
